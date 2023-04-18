@@ -3,7 +3,7 @@ import java.util.regex.MatchResult;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Solution {
 
     public static void main(String[] args) {
 

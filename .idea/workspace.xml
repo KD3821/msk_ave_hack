@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb52449-594e-4c78-a934-00b616473828" name="Changes" comment="Files replaced">
-      <change beforePath="$PROJECT_DIR$/.idea/msk_ave_hack.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/round_1/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/round_1/java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/round_1/java/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/round_1/java/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/round_1/java/src/msk_ave_hack_r1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/round_1/java/src/pom.xml" beforeDir="false" />
+    <list default="true" id="d0f3839c-97cb-40aa-9a55-dd9b1d1687cb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/round_1/java/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/round_1/java/src/main/java/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/round_1/java/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/round_1/java/src/test/java/SolutionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/round_2/java/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/round_2/java/src/main/java/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/round_2/java/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/round_2/java/src/test/java/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,55 +17,29 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="ProjectId" id="2O9JnWboahZIEIrE2Atk3mnPYVl" />
+  <component name="ProjectId" id="2ObjZVtXQ7NfvcL2d53Drg4A1U1" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java/msk_ave_hack&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8eb52449-594e-4c78-a934-00b616473828" name="Changes" comment="" />
-      <created>1680967031177</created>
+      <changelist id="d0f3839c-97cb-40aa-9a55-dd9b1d1687cb" name="Changes" comment="" />
+      <created>1681836230714</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680967031177</updated>
+      <updated>1681836230714</updated>
     </task>
-    <task id="LOCAL-00001" summary="Files replaced">
-      <created>1680967376050</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680967376050</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Files replaced" />
-    <option name="LAST_COMMIT_MESSAGE" value="Files replaced" />
   </component>
 </project>

@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 import java.util.regex.MatchResult;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Solution {
     private static final String error = "%s – это некорректная строка\n";
     private static final ArrayList<String> escapeSequences = new ArrayList<>(Arrays.asList(
             "a", "b", "t", "n", "f", "r", "v", "'", "\""));

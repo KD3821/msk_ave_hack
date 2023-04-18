@@ -3,7 +3,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MainTest {
+class SolutionTest {
 
     @ParameterizedTest
     @CsvSource({
@@ -23,7 +23,7 @@ class MainTest {
             "Only spaces, '   ', '   '"
     })
     public void shouldExpandString(String testName, String string, String expected) {
-        String actual = Main.expandString(string);
+        String actual = Solution.expandString(string);
         assertEquals(expected, actual);
     }
 
@@ -45,7 +45,7 @@ class MainTest {
             "Only spaces, '   ', '   '"
     })
     public void shouldExpandStringByStream(String testName, String string, String expected) {
-        String actual = Main.expandStringByStream(string);
+        String actual = Solution.expandStringByStream(string);
         assertEquals(expected, actual);
     }
 
