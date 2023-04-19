@@ -6,10 +6,11 @@ import java.nio.file.Path;
 import java.util.concurrent.TimeUnit;
 
 import code.Solution;
+import code.SolutionReview;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 
-@Warmup(iterations = 10, time = 1, timeUnit = TimeUnit.MILLISECONDS)
+@Warmup(iterations = 20, time = 1, timeUnit = TimeUnit.MILLISECONDS)
 @Measurement(iterations = 200, time = 1, timeUnit = TimeUnit.MILLISECONDS)
 @Fork(value = 1)
 @BenchmarkMode(Mode.AverageTime)
@@ -29,14 +30,19 @@ public class SolutionBench {
 
     @Benchmark
     public void testMethod1(Blackhole bh){
-        String[] array = Solution.findTopWords(text, 10, false);
+        String[] array = Solution.findTop10Words(text);
         bh.consume(array);
     }
 
     @Benchmark
     public void testMethod2(Blackhole bh){
-        String[] array = Solution.findTopWords(text, 12, true);
+        String[] array = Solution.findTop10WordsCaseSensitive(text);
         bh.consume(array);
     }
 
+    @Benchmark
+    public void testMethod3(Blackhole bh){
+        String[] array = SolutionReview.findTopWords(text);
+        bh.consume(array);
+    }
 }

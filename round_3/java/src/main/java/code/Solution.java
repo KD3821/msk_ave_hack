@@ -7,15 +7,31 @@ import static java.util.stream.Collectors.reducing;
 
 public class Solution {
 
-    public static void main(String[] args) {
+    private static final String EMPTY = "Данная строка не содержит слов.";
 
+    public static String[] findTop10Words(String str) {
+        if (str == null || str.isBlank()) {
+            System.out.println(EMPTY);
+            return new String[]{};
+        }
+
+        String[] words = str.split("\\s+");
+
+        return findTopWordsInArray(words, 10);
     }
 
-    public static String[] findTopWords(String str, int numberOfWords, boolean caseSensitive) {
-        String[] words = caseSensitive ?
-                str.toLowerCase().split("[^а-яa-z\\-]+(-)?") :
-                str.split("\\s+");
+    public static String[] findTop10WordsCaseSensitive(String str) {
+        if (str == null || str.isBlank()) {
+            System.out.println(EMPTY);
+            return new String[]{};
+        }
 
+        String[] words = str.toLowerCase().split("[^а-яa-z\\-]+(-)?");
+
+        return findTopWordsInArray(words, 10);
+    }
+
+    private static String[] findTopWordsInArray(String[] words, int numberOfWords) {
         return Arrays.stream(words)
                 .filter(w -> !w.isBlank())
                 .collect(Collectors.groupingBy(w -> w, reducing(0, w -> 1, Integer::sum)))

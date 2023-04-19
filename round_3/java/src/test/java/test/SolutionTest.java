@@ -1,6 +1,7 @@
 package test;
 
 import code.Solution;
+import code.SolutionReview;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -29,7 +30,7 @@ public class SolutionTest {
 
     @Test
     public void findTopWords() {
-        String[] actual = Solution.findTopWords(text, 10, false);
+        String[] actual = Solution.findTop10Words(text);
         String[] expected = {"он", "и", "а", "что", "ты", "не", "если", "-", "то", "Кристофер"};
 
         printArrays(actual, expected);
@@ -38,11 +39,20 @@ public class SolutionTest {
 
     @Test
     public void findTopWordsCaseSensitive() {
-        String[] actual = Solution.findTopWords(text, 12, true);
-        String[] expected = {"он", "а", "и", "что", "ты", "не", "если", "то", "его", "кристофер", "робин", "в"};
+        String[] actual = Solution.findTop10WordsCaseSensitive(text);
+        String[] expected = {"он", "а", "и", "что", "ты", "не", "то", "его", "кристофер", "в"};
 
         printArrays(actual, expected);
         Assertions.assertTrue(Set.of(actual).containsAll(Set.of(expected)));
+    }
+
+    @Test
+    public void findTopWordsReview() {
+        String[] actual = SolutionReview.findTopWords(text);
+        String[] expected = {"а", "он", "и", "ты", "что", "в", "его", "если", "кристофер", "не"};
+
+        printArrays(actual, expected);
+        Assertions.assertArrayEquals(actual, expected);
     }
 
 }
