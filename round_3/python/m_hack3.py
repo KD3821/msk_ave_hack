@@ -62,7 +62,7 @@ def do_task(data):
             res[key] = value
         if key == '-':
             res[key] = value
-    # res = check2(res)
+    # res = check2(res)  # uncomment for task with *
     v_list = []
     for key, value in res.items():
         v_list.append(value)
